@@ -1,7 +1,8 @@
 import HelloReactView from 'Frontend/views/helloreact/HelloReactView.js';
 import MainLayout from 'Frontend/views/MainLayout.js';
-import { lazy } from 'react';
+import React, { lazy } from 'react';
 import { createBrowserRouter, IndexRouteObject, NonIndexRouteObject, useMatches } from 'react-router-dom';
+import {Board} from "Frontend/views/2048/Board.js";
 
 const AboutView = lazy(async () => import('Frontend/views/about/AboutView.js'));
 export type MenuProps = Readonly<{
@@ -33,7 +34,7 @@ export const routes: readonly ViewRouteObject[] = [
     element: <MainLayout />,
     handle: { icon: 'null', title: 'Main' },
     children: [
-      { path: '/', element: <HelloReactView />, handle: { icon: 'globe-solid', title: 'Hello React' } },
+      { path: '/', element: <Board />, handle: { icon: 'globe-solid', title: '2048' } },
       { path: '/about', element: <AboutView />, handle: { icon: 'file', title: 'About' } },
     ],
   },

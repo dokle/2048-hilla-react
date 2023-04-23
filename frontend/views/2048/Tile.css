@@ -1,0 +1,79 @@
+
+/*.tile-prev {*/
+/*    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;*/
+/*    opacity: 0;*/
+/*}*/
+/**/
+/*.tile-new {*/
+/*    transform: scale(0);*/
+/*    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;*/
+/*}*/
+/**/
+
+/* Tiles */
+.tile {
+    align-items: center;
+    background-color: #eee4da;
+    border-radius: 5px;
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    transition-property: left, top, transform;
+    transition-duration: 250ms, 250ms, 100ms;
+}
+
+.tile-2 {
+    color: #f18a1f;
+}
+
+.tile-4 {
+    color: #3978d5;
+}
+
+.tile-8 {
+    color: #f9f6f2;
+    background-color: #f2b179;
+}
+
+.tile-16 {
+    color: #f9f6f2;
+    background-color: #f59563;
+}
+
+.tile-32 {
+    color: #f9f6f2;
+    background-color: #f67c5f;
+}
+
+.tile-64 {
+    color: #f9f6f2;
+    background-color: #f65e3b;
+}
+
+.tile-128 {
+    color: #f9f6f2;
+    background-color: #edcf72;
+}
+
+.tile-256 {
+    color: #f9f6f2;
+    background-color: #edcc61;
+}
+
+.tile-512 {
+    color: #f9f6f2;
+    background-color: #edc850;
+}
+
+.tile-1024 {
+    color: #f9f6f2;
+    background-color: #edc53f;
+}
+
+.tile-2048 {
+    color: #f9f6f2;
+    background-color: #edc22e;
+}
